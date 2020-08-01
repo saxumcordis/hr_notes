@@ -1,0 +1,65 @@
+body {
+    background: radial-gradient(at center bottom, rgb(0, 37, 52) 0%, rgb(9, 10, 15) 100%);
+    background-size: 1000px 1000px;
+}
+
+.notes_box {
+    margin-top: 250px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.note {
+    width: 550px;
+    height: 150px;
+    border: 2px solid #1bd32e;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.circle-out {
+    margin-top: 25px;
+    margin-left: 20px;
+    position:relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #76d38f;
+    background: transparent;
+    overflow: hidden;
+}
+.circle-in {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    margin: 4px;
+    border-radius: 50%;
+    border: 1px solid #417a51;
+    background: radial-gradient(at center bottom, rgb(0, 37, 52) 0%, rgb(9, 10, 15) 100%);
+    text-align: center;
+    vertical-align: center;
+    line-height: 55px;
+    color: white;
+    font-family: "Comic Sans MS";
+}
+.progress {
+    height: 110px;
+    width: 220px;
+    background: transparent;
+    position: absolute;
+    top:-110px;
+    left: -60px;
+    transform: rotate(30deg);
+    transform-origin: 110px 110px;
+    transition: all .3s;
+}
+
+.note_info {
+    margin-top: 15px;
+    margin-left: 5px;
+    font: 21px/32px SBSansInterface,OpenSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: white;
+}
