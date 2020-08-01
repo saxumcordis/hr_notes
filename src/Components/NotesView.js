@@ -1,6 +1,7 @@
 import React from 'react';
 import {ProgressBar} from "./ProgressBar";
 import {GlobalNotes} from "../Notes/GlobalNotes"
+import {Link} from "react-router-dom";
 
 const Note = ({note}) => {
     return (
@@ -11,7 +12,7 @@ const Note = ({note}) => {
                 <div className="note_service">
                     <h3 className="note_func">Progress stat</h3>
                     <h3 className="note_func">Steps</h3>
-                    <h3 className="note_func">FeedbackTree</h3>
+                    <Link to={"/feedbacktree/" + note.id}><h3 className="note_func">FeedbackTree</h3></Link>
                 </div>
                 <h3 className="note_deadline">{note.deadline}</h3>
             </div>
