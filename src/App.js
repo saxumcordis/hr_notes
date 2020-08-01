@@ -5,6 +5,9 @@ import {Feedback} from "./Components/Feedback";
 import {Notes} from "./Components/NotesView";
 import Style from "./Style/Style.css"
 import {Header} from "./Components/Header";
+import {BossPage} from "./Components/BossPage";
+import {Friends} from "./Components/Friends";
+import {MyPage} from "./Components/MyPage";
 
 const App = () => {
   return (
@@ -15,6 +18,15 @@ const App = () => {
             <Route path="/feedbacktree/:id">
               <Feedback/>
             </Route>
+              <Route path="/bosstasks">
+                  <BossPage/>
+              </Route>
+              <Route path="/mypage">
+                  <MyPage/>
+              </Route>
+              <Route path="/friends">
+                  <Friends/>
+              </Route>
             <Route exact path="/">
               <Notes/>
             </Route>

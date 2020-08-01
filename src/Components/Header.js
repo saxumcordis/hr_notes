@@ -10,17 +10,17 @@ const disabledMenu = {
 }
 
 const Header = () => {
-    const [activeField, setActiveField] = useState('company');
-
+    const [activeField, setActiveField] = useState(window.location.pathname);
+    console.log(window.location.pathname);
     const handleActiveField = (menu) => setActiveField(menu);
 
     return (
        <div className="header">
            <ul className="menu">
-               <Link to="/"><li onClick={() => handleActiveField('company')} style={activeField === 'company' ? activeMenu : null}>COMPANY</li></Link>
-               <li style={disabledMenu}>BOSS</li>
-               <li style={disabledMenu}>ME</li>
-               <li style={disabledMenu}>FRIENDS</li>
+               <Link to="/"><li onClick={() => handleActiveField('/')} style={activeField === '/' ? activeMenu : null}>COMPANY</li></Link>
+               <Link to="/bosstasks"><li onClick={() => handleActiveField('/bosstasks')} style={activeField === '/bosstasks' ? activeMenu : null}>BOSS</li></Link>
+               <Link to="/mypage"><li onClick={() => handleActiveField('/mypage')} style={activeField === '/mypage' ? activeMenu : null}>ME</li></Link>
+               <Link to="/friends"><li onClick={() => handleActiveField('/friends')} style={activeField === '/friends' ? activeMenu : null}>FRIENDS</li></Link>
            </ul>
        </div>
     );

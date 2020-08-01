@@ -6,7 +6,16 @@ const activeTool = {
 
 const Feedback = () => {
 
-    const content = ["4/4 1/4 3/4 4/4", "Good product.", "some graphic"];
+    const content = [<ul>
+        <li>Quality of product: 3/4</li>
+        <li>Technical side: 4/4</li>
+        <li>Usability of product: 4/4</li>
+    </ul>,
+        <ul>
+            <li>Good product</li>
+            <li>I think, it could be better</li>
+            <li>Well done. I have some marks</li>
+        </ul>, <img style={{width: "400px"}}src="https://sun1-91.userapi.com/W8Rn-_Ki3VRwDIOu8jCqBPoKCJSOOC6dhkNU-g/ycUhw4VNQQ0.jpg"/>];
 
     const [activeContent, setContent] = useState(0);
     const handleContent = content => setContent(content);
@@ -28,4 +37,4 @@ const Feedback = () => {
     );
 };
 
-export {Feedback}
+export {Feedback};
