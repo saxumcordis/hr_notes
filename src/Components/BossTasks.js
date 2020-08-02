@@ -3,11 +3,11 @@ import {Link} from "react-router-dom";
 
 const BossTasks = () => {
     return (
-        <div className="bosstasks">
-            <div className="bosstasks_tree">
-                <img src='https://psv4.userapi.com/c856224/u89830763/docs/d17/7b6e98204c9a/tree_5.png'/>
+        <div className="friends">
+            <div className="friends_left">
+                <img className="my_tree" src='https://psv4.userapi.com/c856224/u89830763/docs/d17/7b6e98204c9a/tree_5.png?extra=g1Ycn9hQzOT-Ufabgn1c-VurVhNmWPE7DWGn2et3BmW7IYczXFhYNat_4c1dcm-LT-tDxZCJDIWGVVYgbdGYi5UnfIdMtiIPGf_EPhbxYyhmRGCkzdC8o0yI5N0b5SzESN0XFWwzGR8q13nA-YGQ'/>
             </div>
-            <div className="bosstasks_right">
+            <div className="friends_right">
                 <div className="first">
                     <img style={{width: "50px", height: "50px"}}src='https://cdn.iconscout.com/icon/free/png-512/mail-1138-827052.png'/>
                     <div className="first_text">

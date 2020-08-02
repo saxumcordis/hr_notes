@@ -15,6 +15,7 @@ const randomProgress = (id) => {
 };
 
 const notRandomProgress = (id, percents) => {
+    percents = percents > 100 ? 100 : percents;
     let progress = document.getElementById(id);
     progress.style.background = !percents ? "transparent" : "rgb(" + (125 - Math.round(125 * percents / 100)) +", " + (194 - Math.round(82 * percents / 100)) + "," + (68 - Math.round(8 * percents / 100)) + ")";
     progress.style.height = 110 + percents + "px";
@@ -58,9 +59,29 @@ const ProgressBar = ({id, percents = -1, setTree}) => {
             return ;
         }
         if (percent === 100) {
-            setPercent(0);
+            setPercent(101);
             setTree(6);
             return ;
+        }
+        if (percent === 101) {
+            setPercent(102);
+            setTree(7);
+            return;
+        }
+        if (percent === 102) {
+            setPercent(103);
+            setTree(8);
+            return;
+        }
+        if (percent === 103) {
+            setPercent(104);
+            setTree(9);
+            return;
+        }
+        if (percent === 104) {
+            setPercent(0);
+            setTree(10);
+            return;
         }
     }
 

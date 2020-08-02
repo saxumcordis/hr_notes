@@ -67,6 +67,10 @@ const Feedback = () => {
         'https://psv4.userapi.com/c856224/u89830763/docs/d1/4360d2af7153/tree_6.png?extra=qFNBBMthTrt27CrTkDAXdCtfqj0oLMFAjhJLXeVPjxtA6Iq5qJOUZfECDttsmtWib6zcwVotVtU6bTDBxQCB94TAxJy4N48P32Wt0r_lomQAR-DTkLbzntrb_YW3z6wQDKXs0ksRChiUY93379pc',
         'https://psv4.userapi.com/c856224/u89830763/docs/d11/675e13889e79/tree_7.png?extra=Sf2-yKijYWxHs-5nnOv2KTrMw1IZ-MHBHNZ2-3nRV0aHte4tE15d0qIHsBTUWylKbgmraA82uV5sFaU62V5VmpA1Weth2TEQsVBvhqj8OBeWBgeiJSULtDWvSc-WR2_jzQOvbNkfqeHtXmnUa7bf',
         'https://psv4.userapi.com/c856224/u89830763/docs/d17/7b6e98204c9a/tree_5.png?extra=g1Ycn9hQzOT-Ufabgn1c-VurVhNmWPE7DWGn2et3BmW7IYczXFhYNat_4c1dcm-LT-tDxZCJDIWGVVYgbdGYi5UnfIdMtiIPGf_EPhbxYyhmRGCkzdC8o0yI5N0b5SzESN0XFWwzGR8q13nA-YGQ',
+        'https://psv4.userapi.com/c856336/u89830763/docs/d5/ecdb9e5056e4/feedback.png?extra=_HepH7y1Cy6JqSTXsP5qkEugFqb4aOu3oQwX6YoJElDnIrjNX60su9VT0FD60jY4HLCdr5KW15dz0vJSKqIXJbdnIrcJ0673PDa4a036ad8loo3WUAXIFozdPjbXtCArEjGQue2k9Nn3HVeQRTtG',
+        'https://psv4.userapi.com/c856336/u89830763/docs/d1/5e78c17412e6/feedback1.png?extra=HmRNYI5bgOtk0io6MjVPXV4-yba9cb_oOmP8f3sMexWAeiUlFd3D7JOQ1VpABc6WpYuJDuAKqPu-MMbPC021QfJ28hSqqWYV4_UBqy8FMShmRMPL6V5oBPnwDysnC3k31D3yDmb3nzn5iIWiQrtL',
+        'https://psv4.userapi.com/c856336/u89830763/docs/d8/f5d5eca6e43e/feedback3.png?extra=cLNWWSEPoGIerszwI7waAs_KW2hcDpvGdkucsXbsaR9PmYz5WkJM-Ok4h3XgUhjLEPxig50in_V_JbElEzD2NixAWYoGOcivan1LZELG4p43mDi_WzCG5wcQ5098kXej_x4aizQGNIb2zLXzMn0H',
+        'https://psv4.userapi.com/c856336/u89830763/docs/d2/7fc2e96bf9b3/feedback4.png?extra=xw7yiAsLWqT9cTojZiGIV_cjB5ResHHF2cwcCvwamqZE4UniRgvtlpCDPxDrO41b0qehHiawMOeWGff7H_ZbLK102Ni_wY-YRMPODY0lRL5xhMAqXRFfcaWEiVpfcp_Q9BATOoJube-DfCe-xfEW'
     ];
 
     return (

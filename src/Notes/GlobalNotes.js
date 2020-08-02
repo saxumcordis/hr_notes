@@ -3,7 +3,7 @@ import React from 'react';
 const GlobalNotes = [
     {
         id: 1,
-        header: "Create MVP",
+        header: "Проработанная концепция продукта HR Sber",
         deadline: "31.07.20",
     },
     {

@@ -84,7 +84,7 @@ a, a:visited{
 
 .note_header, .note_deadline {
     position: relative;
-    font: 21px/32px SBSansInterface,OpenSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font: 19px/32px SBSansInterface,OpenSans,Helvetica Neue,Helvetica,Arial,sans-serif;
     margin-top: 0;
     width: 400px;
     text-align: right;
@@ -94,6 +94,7 @@ a, a:visited{
     border-bottom:3px solid rgba(179,216,140, 0.9);
     padding-bottom: 4px;
     height: 25px;
+    cursor: pointer;
 }
 
 .note_header:hover, .note_deadline:hover {
@@ -434,5 +435,39 @@ button {
 }
 
 button:hover {
+    background: rgb(214,224,62);
+}
 
+.note_full {
+    font: 16px SBSansInterface,OpenSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: white;
+    margin-left: 50px;
+    width: 800px;
+    height: 500px;
+    border: 2px solid rgb(179,216,140);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s;
+    margin-top: 15px;
+    background: rgba(179,216,140, 0.7);
+}
+
+.note_full p {
+    width: 400px;
+    margin-left: 40px;
+    cursor: default;
+}
+
+.note_field {
+    text-shadow: 1px 1px 1px black, 0 0 1em rgb(214,224,62)
+}
+
+.avail_task {
+    text-shadow: 1px 1px 1px black, 0 0 1em rgb(214,224,62);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.avail_task:hover {
+    text-decoration: none;
 }

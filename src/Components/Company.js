@@ -3,7 +3,7 @@ import {Notes,NoteFull} from "./NotesView";
 
 
 const Company = () => {
-    const [activeNote, setActiveNote] = useState(null);
+    const [activeNote, setActiveNote] = useState(1);
 
     return (
         <div className="company_box">
@@ -21,10 +21,10 @@ const Company = () => {
                     <h3 style={{marginTop: "50px"}}>НАЙТИ ЗАДАЧУ ИЛИ ПРОЕКТ</h3>
                     <input className="friend_search_input" placeholder="поиск"/>
                     <p style={{marginLeft: "50px"}}>Результаты поиска:</p>
-                    <p style={{marginLeft: "55px"}}>Разработать алгоритм поиска стартапов <button>Хочу в команду</button> <button>Предложить другу</button></p>
+                    <p style={{marginLeft: "55px"}}> <span className="avail_task" onClick={() => setActiveNote(1)}>Разработать концепцию продукта HR Sber</span> <button>Хочу в команду</button> <button>Предложить другу</button></p>
                 </div>
             </div>
-            : <NoteFull id={activeNote}/>}
+            : <NoteFull id={activeNote} setActiveNote={setActiveNote}/>}
         </div>
     );
 };
