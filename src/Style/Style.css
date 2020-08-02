@@ -60,7 +60,7 @@ a, a:visited{
     vertical-align: center;
     line-height: 55px;
     color: white;
-    font-family: "Comic Sans MS";
+    font-family: Roboto;
 }
 .progress {
     height: 110px;
@@ -77,14 +77,14 @@ a, a:visited{
 .note_info {
     margin-top: 15px;
     margin-left: 5px;
-    font: 21px/32px SBSansInterface,OpenSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font: 21px/32px Roboto,sans-serif;
     color: white;
     width: 350px;
 }
 
 .note_header, .note_deadline {
     position: relative;
-    font: 19px/32px SBSansInterface,OpenSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font: 19px/32px Roboto,sans-serif;
     margin-top: 0;
     width: 400px;
     text-align: right;
@@ -108,7 +108,7 @@ a, a:visited{
 }
 
 .note_func {
-    font: 16px SBSansInterface,OpenSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font: 16px Roboto,sans-serif;
     margin-top: 0;
     margin-left: 15px;
     text-shadow: 1px 1px 1px black, 0 0 1em #12d37b;
@@ -421,7 +421,7 @@ table {
     display: flex;
     flex-direction: column;
     margin-left: 65px;
-    font: 16px SBSansInterface,OpenSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font: 16px SBSansInterface,OpenSans,Helvetica Neue,Helvetica,Roboto,sans-serif;
     color: white;
 }
 
@@ -470,4 +470,9 @@ button:hover {
 }
 .avail_task:hover {
     text-decoration: none;
+}
+
+.root_img {
+    max-width: 300px;
+    margin: 0;
 }

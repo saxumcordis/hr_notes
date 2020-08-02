@@ -69,7 +69,7 @@ const MyPage = () => {
                             <td className="table_margin">Длительность</td>
                         </tr>
                         <tr>
-                            <td className="success">15:45</td>
+                            <td className="success" style={{textAlign: "center"}}>15:45</td>
                             <td>Придумать идею трекера задач для Сбербанка</td>
                             <td style={{textAlign: "center"}}>1 ч</td>
                             <td><img className="small_profile"

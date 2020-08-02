@@ -3,7 +3,7 @@ import {Notes,NoteFull} from "./NotesView";
 
 
 const Company = () => {
-    const [activeNote, setActiveNote] = useState(1);
+    const [activeNote, setActiveNote] = useState(null);
 
     return (
         <div className="company_box">
