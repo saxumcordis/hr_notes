@@ -267,6 +267,11 @@ a, a:visited{
 
 }
 
+.bosstasks_tree {
+    left: 0;
+    min-width: 500px;
+}
+
 .bosstasks_right {
     display: flex;
     flex-direction: column;

@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 const BossTasks = () => {
     return (
         <div className="bosstasks">
-            <div className="left">
+            <div className="bosstasks_tree">
                 <img src='https://psv4.userapi.com/c856224/u89830763/docs/d17/7b6e98204c9a/tree_5.png'/>
             </div>
             <div className="bosstasks_right">
