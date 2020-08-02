@@ -241,3 +241,14 @@ a, a:visited{
 .worker:hover {
     border: 3px solid rgba(214,224,62, 0.9);
 }
+
+.tree_stage {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.tree_img {
+    margin-left: 15px;
+    width: 500px;
+}
