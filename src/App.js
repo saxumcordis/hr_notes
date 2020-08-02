@@ -9,6 +9,7 @@ import {Friends} from "./Components/Friends";
 import {MyPage} from "./Components/MyPage";
 import {BossTasks} from "./Components/BossTasks";
 import {Company} from "./Components/Company";
+import {Present} from "./Components/Present";
 
 const App = () => {
   return (
@@ -30,6 +31,9 @@ const App = () => {
               </Route>
               <Route path="/control">
                   <BossPage/>
+              </Route>
+              <Route path="/present">
+                  <Present/>
               </Route>
             <Route exact path="/">
               <Company/>
