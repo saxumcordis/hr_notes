@@ -9,20 +9,51 @@ const activeTool = {
 const Feedback = () => {
     const note =  {
         id: 1,
-        header: "Create MVP",
-        deadline: "31.07.20",
+        header: "DO MVP BETTER",
+        deadline: "02.08.20",
     };
 
-    const content = [<ul>
-        <li>Quality of product: 3/4</li>
+    const content = [[<ul>
+        <li>Quality of product: 4/4</li>
         <li>Technical side: 4/4</li>
         <li>Usability of product: 4/4</li>
     </ul>,
         <ul>
-            <li>Good product</li>
-            <li>I think, it could be better</li>
+            <li>It has the big future</li>
+            <li>Great idea. Do it!</li>
+            <li>Good.</li>
+        </ul>, <img style={{width: "400px"}}src="https://sun1-91.userapi.com/W8Rn-_Ki3VRwDIOu8jCqBPoKCJSOOC6dhkNU-g/ycUhw4VNQQ0.jpg"/>],
+        [<ul>
+        <li>Quality of product: 3/4</li>
+        <li>Technical side: 3/4</li>
+        <li>Usability of product: 4/4</li>
+    </ul>,
+        <ul>
+            <li>Good idea, but mvp could be better</li>
+            <li>Not bad. Try it harder</li>
             <li>Well done. I have some marks</li>
-        </ul>, <img style={{width: "400px"}}src="https://sun1-91.userapi.com/W8Rn-_Ki3VRwDIOu8jCqBPoKCJSOOC6dhkNU-g/ycUhw4VNQQ0.jpg"/>];
+        </ul>, <img style={{width: "400px"}}src="https://sun1-91.userapi.com/W8Rn-_Ki3VRwDIOu8jCqBPoKCJSOOC6dhkNU-g/ycUhw4VNQQ0.jpg"/>],
+        [<ul>
+            <li>Quality of product: 1/4</li>
+            <li>Technical side: 2/4</li>
+            <li>Usability of product: 4/4</li>
+        </ul>,
+            <ul>
+                <li>Poor stage. Make it better.</li>
+                <li>I believe in you. DO IT</li>
+                <li>Well done. I have some marks</li>
+            </ul>, <img style={{width: "400px"}}src="https://sun1-91.userapi.com/W8Rn-_Ki3VRwDIOu8jCqBPoKCJSOOC6dhkNU-g/ycUhw4VNQQ0.jpg"/>],
+        [<ul>
+            <li>Quality of product: 3/4</li>
+            <li>Technical side: 4/4</li>
+            <li>Usability of product: 4/4</li>
+        </ul>,
+            <ul>
+                <li>Good product</li>
+                <li>I think, its quite good, but you can do better</li>
+                <li>Well done. I have some marks</li>
+            </ul>, <img style={{width: "400px"}}src="https://sun1-91.userapi.com/W8Rn-_Ki3VRwDIOu8jCqBPoKCJSOOC6dhkNU-g/ycUhw4VNQQ0.jpg"/>]
+    ];
 
     const [activeContent, setContent] = useState(0);
     const handleContent = content => setContent(content);
@@ -61,7 +92,7 @@ const Feedback = () => {
                     <li onClick={() => handleContent(2)} style={activeContent === 2 ? activeTool : null}>Stats</li>
                 </ul>
                 <div className="feedback_tree_tools_content">
-                    <p>{content[activeContent]}</p>
+                    <p>{content[treeStage % 4][activeContent]}</p>
                 </div>
             </div>
         </div>
