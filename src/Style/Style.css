@@ -263,6 +263,7 @@ a, a:visited{
 .bosstasks {
     display: flex;
     flex-direction: row;
+    left: 0;
 
 }
 
@@ -310,6 +311,7 @@ a, a:visited{
 }
 
 .mypage, .friends{
+    left: 0;
     display: flex;
     flex-direction: row;
     font: 16px SBSansInterface,OpenSans,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -334,12 +336,12 @@ a, a:visited{
 
 
 table {
-    border-collapse: separate; /* Способ отображения границы */
-    width: 100%; /* Ширина таблицы */
-    border-spacing: 7px 11px; /* Расстояние между ячейками */
+    border-collapse: separate;
+    width: 100%;
+    border-spacing: 7px 11px;
 }
 .table_margin {
-    padding: 5px; /* Поля вокруг текста */
+    padding: 5px;
     text-align: center;
 }
 
@@ -397,8 +399,35 @@ table {
 .friend_search_input {
     margin-left: 50px;
     margin-top: 0;
-    width: 250px;
+    width: 350px;
     height: 20px;
     background: rgb(179,216,140);
     color: white;
+    padding: 0 15px;
+}
+
+.company_box {
+    display: flex;
+    flex-direction: row;
+}
+
+.company_main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 65px;
+    font: 16px SBSansInterface,OpenSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: white;
+}
+
+.company_my_tasks {
+
+}
+button {
+    background: rgb(179,216,140);
+    border-radius: 25px;
+    margin-left: 5px;
+}
+
+button:hover {
+
 }

@@ -3,12 +3,20 @@ import {ProgressBar} from "./ProgressBar";
 import {GlobalNotes} from "../Notes/GlobalNotes"
 import {Link} from "react-router-dom";
 
-const Note = ({note}) => {
+const NoteFull = ({id}) => {
+    return (
+        <div className="note_full">
+            ssss
+        </div>
+    )
+};
+
+const Note = ({note, setActiveNote}) => {
     return (
         <div className="note">
             <ProgressBar id={note.id}/>
             <div className="note_info">
-                <h3 className="note_header">{note.header}</h3>
+                <h3 className="note_header" onClick={() => setActiveNote(note.id)}>{note.header}</h3>
                 <div className="note_service">
                     <h3 className="note_func">Progress stat</h3>
                     <h3 className="note_func">Steps</h3>
@@ -21,13 +29,13 @@ const Note = ({note}) => {
 };
 
 
-const Notes = () => {
+const Notes = ({setActiveNote}) => {
     const notes = GlobalNotes;
     return (
         <div className="notes_box">
-            {notes.map(note => <Note note={note}/>)}
+            {notes.map(note => <Note note={note} setActiveNote={setActiveNote}/>)}
         </div>
     );
 };
 
-export {Notes}
+export {Notes, NoteFull}

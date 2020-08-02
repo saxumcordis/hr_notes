@@ -16,7 +16,7 @@ const MyPage = () => {
                     </ul>
                     <ul className="mystats_list boss_menu">
                         <li>Моя статистика</li>
-                        <Link to="/myhead"><li>Моё управление</li></Link>
+                        <Link to="/control"><li>Моё управление</li></Link>
                     </ul>
                 </div>
             </div>

@@ -46,7 +46,7 @@ const Friends = () => {
                 <div className="friend_search">
                         <h3 style={{marginLeft: "50px"}}>НАЙТИ ДРУГА</h3>
                         <input className="friend_search_input" placeholder="поиск"/>
-                        <p style={{marginLeft: "50px", fontSize: "14px", color: "rgb(179,216,140)"}}>поиск по ФИО, должности, отделу</p>
+                        <p style={{marginLeft: "50px", fontSize: "14px", color: "rgb(179,216,140)"}}>поиск по ФИО, должности, отделу, по компетенциям</p>
                 </div>
             </div>
         </div>
