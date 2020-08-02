@@ -8,6 +8,7 @@ import {Header} from "./Components/Header";
 import {BossPage} from "./Components/BossPage";
 import {Friends} from "./Components/Friends";
 import {MyPage} from "./Components/MyPage";
+import {BossTasks} from "./Components/BossTasks";
 
 const App = () => {
   return (
@@ -19,13 +20,16 @@ const App = () => {
               <Feedback/>
             </Route>
               <Route path="/bosstasks">
-                  <BossPage/>
+                  <BossTasks/>
               </Route>
               <Route path="/mypage">
                   <MyPage/>
               </Route>
               <Route path="/friends">
                   <Friends/>
+              </Route>
+              <Route path="/myhead">
+                  <BossPage/>
               </Route>
             <Route exact path="/">
               <Notes/>

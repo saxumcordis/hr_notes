@@ -253,9 +253,152 @@ a, a:visited{
     width: 500px;
     max-width: 500px;
     max-height: 500px;
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-    -o-animation: fadein 2s; /* Opera < 12.1 */
-    animation: fadein 2s;
+    -moz-animation-delay: 3.5s;
+    -webkit-animation-delay: 3.5s;
+    -o-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+    transition: 0.4s all;
+}
+
+.bosstasks {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.bosstasks_right {
+    display: flex;
+    flex-direction: column;
+    font: 16px SBSansInterface,OpenSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: white;
+}
+.first {
+    display: flex;
+    flex-direction: row;
+}
+
+.first_text {
+    margin-left: 15px;
+    color: white;
+}
+
+.first_text h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.list_idea {
+    list-style-type: none;
+    padding-left: 1em;
+    text-indent: -.7em;
+}
+
+.list_idea::before {
+    content: "• ";
+    color: rgb(214,224,62); /* or whatever color you prefer */
+    font-size: 25px;
+}
+
+.none::before {
+    color: white;
+    font-size: 25px;
+}
+
+.second {
+    margin-top: 50px;
+    margin-left: 65px;
+}
+
+.mypage, .friends{
+    display: flex;
+    flex-direction: row;
+    font: 16px SBSansInterface,OpenSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: white;
+}
+
+.mypage_right, .friends_right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.mypage_first {
+    margin-left: 15px;
+}
+
+.my_tree {
+    width: 500px;
+    min-height: 500px;
+}
+
+
+
+table {
+    border-collapse: separate; /* Способ отображения границы */
+    width: 100%; /* Ширина таблицы */
+    border-spacing: 7px 11px; /* Расстояние между ячейками */
+}
+.table_margin {
+    padding: 5px; /* Поля вокруг текста */
+    text-align: center;
+}
+
+.success {
+    background: rgb(0, 112, 60);
+}
+
+.almost {
+    background: rgb(214,224,62);
+}
+
+.quarter {
+    background: rgb(179,216,140);
+}
+
+.small_profile {
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+}
+
+
+.mystats_list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.mystats_list li {
+    margin-left: 15px;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+}
+.friend {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.friends_tasks {
+    display: flex;
+    flex-direction: column;
+}
+
+.friend_task {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 0;
+}
+
+.friend_search_input {
+    margin-left: 50px;
+    margin-top: 0;
+    width: 250px;
+    height: 20px;
+    background: rgb(179,216,140);
+    color: white;
 }
