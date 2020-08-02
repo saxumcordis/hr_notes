@@ -20,7 +20,7 @@ const Header = () => {
                <Link to="/bosstasks"><li onClick={() => handleActiveField('/bosstasks')} style={activeField === '/bosstasks' ? activeMenu : null}>BOSS</li></Link>
                <Link to="/mypage"><li onClick={() => handleActiveField('/mypage')} style={activeField === '/mypage' ? activeMenu : null}>ME</li></Link>
                <Link to="/friends"><li onClick={() => handleActiveField('/friends')} style={activeField === '/friends' ? activeMenu : null}>FRIENDS</li></Link>
-               <Link to="/control"><li onClick={() => handleActiveField('/control')} style={activeField === '/control' ? activeMenu : null}>CONTROL</li></Link>
+               
            </ul>
        </div>
     );
